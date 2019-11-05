@@ -12,7 +12,7 @@
         <h1>目安箱 サンプル</h1>
         <add-form  @post="post($event)"></add-form>
         <h2 class="title">投稿一覧</h2>
-        <question v-if="questions != {}" v-for="(question, key) in questions" v-bind:data="question" @up="up(key)"></question>
+        <question v-for="(question, key) in questions" v-bind:data="question" @up="up(key)"></question>
     </div>
 </body>
 </html>
