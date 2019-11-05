@@ -8,7 +8,7 @@ import (
 func main() {
 
     fs := http.FileServer(http.Dir("contents"))
-    // ルーティング設定。"/"というアクセスがきたら contents ディレクトリのコンテンツを表示させる
+    // contents ディレクトリ以下のファイルを表示する
     http.Handle("/", fs)
 
     log.Println("Listening...")
